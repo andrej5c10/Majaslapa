@@ -86,11 +86,20 @@
 
 
 
-<h1>Parbaudi savas zināšanas! Izvelies priekšmētu:</h1>
+<h1>Parbaudi savas zināšanas!</h1>
 
-<button class="btn btn-light rounded-pill px-3" type="button">Latviēsu valoda</button>
-<button class="btn btn-light rounded-pill px-3" type="button">Matemātika</button>
-<button class="btn btn-light rounded-pill px-3" type="button">Angļu valoda</button>
+
+<button class="btn btn-info rounded-pill px-3" type="button" onclick="next_question()">Matemātika</button>
+<button class="btn btn-info rounded-pill px-3" type="button" onclick="next_question()">Angļu valoda</button> 
+<button class="btn btn-info rounded-pill px-3" type="button" onclick="next_question()">Latviešu valoda</button> 
+        <div id="main">
+            <div id="question">
+        
+            </div>
+            <button class="btn btn-info rounded-pill px-3" type="button" onclick="show_answer()">Show answer!</button> 
+            <div id="answer">
+            </div>
+        </div>
 
 
 
