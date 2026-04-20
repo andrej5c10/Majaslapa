@@ -74,3 +74,15 @@ body > h1:last-of-type {
     margin-right: auto;
     max-width: 1000px;
 }
+
+.box {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+img {
+  width: 300px;
+  flex-shrink: 0; 
+  align-self: flex-start;
+}
