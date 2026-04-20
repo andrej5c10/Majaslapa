@@ -70,3 +70,42 @@ li + p {
     border-color: #0dcaf0;
 }
 
+.box {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+}
+
+img {
+  width: 250px;
+  flex-shrink: 0; 
+  align-self: flex-start;
+}
+
+
+div.scroll-container {
+  background-color: #fef0f0;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+
+
+.ievads {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ievads-text {
+    text-align: center;
+    font-style: italic;
+    color: #000000;
+}
