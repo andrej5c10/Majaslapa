@@ -109,3 +109,8 @@ div.scroll-container img {
     font-style: italic;
     color: #000000;
 }
+
+
+#main {
+    margin-left: 20px;
+}
