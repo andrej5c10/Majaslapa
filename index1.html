@@ -14,6 +14,19 @@
  
     <div class="container"> <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> <span class="exam">Gatavošānas eksāmeniem</span> </a> <ul class="nav nav-pills"> <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Galvena</a></li> <li class="nav-item"><a href="index1.html" class="nav-link">Palīdzība un padomi</a></li> </ul> </header> </div>
     
+    <h1>Kāds eksāmens tev likās visgrūtākais?</h1>
+    <input list="heroes" class = "form-control ms-5" style="width: 250px;">
+    <datalist id="heroes">
+        <option>Latviešu valoda</option>
+        <option>Angļu valoda</option>
+        <option>Bioloģija</option>
+        <option>Ķīmija</option>
+        <option>Fizika</option>
+        <option>Matemātika</option>
+     </datalist>
+
+
+
 <h1>Neuztraucies!</h1>
 
 <div class="box">
@@ -26,11 +39,29 @@ Satraukums bieži vien nozīmē, ka tev rūp tavs rezultāts un tu vēlies izdar
 </div>
 
 
-
-
 <h1>Uztraucies pirms eksāmeniem?</h1>
-<button class="btn btn-danger rounded-pill px-3" type="button">Nē</button>
-<button class="btn btn-success rounded-pill px-3" type="button">Jā</button>
+
+<button type="button" class="btn btn-success rounded-pill px-3 m-2"onclick="showAnswer('Tas ir pilnīgi normāli. Tu neesi viens — daudzi skolēni jūtas tieši tāpat. Tas nozīmē, ka tev rūp tavs rezultāts un tu vēlies darīt visu pēc iespējas labāk. Mēģini sadalīt mācības mazākos soļos, koncentrēties uz vienu lietu vienlaikus un neuzlikt sev pārāk lielu spiedienu. Tu dari visu, kas ir tavos spēkos, un tas jau ir pietiekami. 👉 Tu esi stiprāks, nekā tev šķiet, un tu noteikti tiksi galā. ')">Jā </button>
+
+
+<button type="button" class="btn btn-danger rounded-pill px-3"onclick="showAnswer('Tas ir lieliski! Tas nozīmē, ka tu jūties mierīgs un pārliecināts par savām zināšanām. Saglabā šo mieru un turpini gatavoties tāpat kā līdz šim. Pārliecība un sagatavošanās kopā palīdz sasniegt labākos rezultātus. 👉 Tu esi uz pareizā ceļa — turpini tā! ')">Nē
+</button>
+
+
+<div class="modal fade" id="answerModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title">Atbilde</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      
+      <div class="modal-body" id="modalText"></div>
+      
+    </div>
+  </div>
+</div>
 
 
 
